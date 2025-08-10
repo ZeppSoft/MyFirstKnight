@@ -8,10 +8,14 @@ namespace CodeBase.Infrastructure
     /// </summary>
     public class GameBootstrapper : MonoBehaviour
     {
+        private Game _game;
+
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         private void Awake()
         {
-
+            _game = new Game();
+            // Prevent this GameBootstrapper instance from being destroyed when loading a new scene
+            DontDestroyOnLoad(this);
         }
     }
 }

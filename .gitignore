@@ -452,3 +452,6 @@ FodyWeavers.xsd
 /UnityEngine.TestRunner.Player.csproj
 /UnityEngine.UI.csproj
 /UnityEngine.UI.Player.csproj
+/Library
+/Temp
+/UserSettings
